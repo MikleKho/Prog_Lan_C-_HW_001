@@ -7,13 +7,15 @@ int Prompt(string message)
     int result = int.Parse(ReadValue);
     return result;
 }
-int value_01 = Prompt("Введите число -> ");
-
-if ((value_01 % 2) == 0)
+int value_01 = Prompt("Введите положительное целое число -> ");
+if (value_01 < 2)
 {
-    System.Console.Write("Вы ввели четное число");
+    System.Console.Write("Недопустимо маленькое значение");
 }
 else
 {
-    System.Console.Write("Вы ввели нечетное число");
+    for (int count = 2; count <= value_01; count = count + 2)
+    {
+        System.Console.Write(count + ", ");
+    }
 }
