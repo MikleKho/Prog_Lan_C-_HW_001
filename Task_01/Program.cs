@@ -1,4 +1,7 @@
-﻿int Prompt(string message)
+﻿// Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+// a = 5; b = 7 -> max = 7, min = 5
+
+int Prompt(string message)
 {
     System.Console.Write(message);
     string ReadValue = Console.ReadLine();
